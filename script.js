@@ -8,8 +8,10 @@ async function loadData() {
     document.getElementById("textAndHtml").innerHTML = store
       .map((data) => `
         <div class="card">
+         <p class="image"> <img src="${data.image}"</p>
           <p class="title">Title: ${data.title}</p>
           <p class="price">Price: $${data.price}</p>
+         
         </div>
       `)
       .join("");
